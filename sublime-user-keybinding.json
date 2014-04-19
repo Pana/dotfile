@@ -1,0 +1,24 @@
+[
+  /* delete one line */
+  { "keys": ["super+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+
+  /* bookmark */
+  { "keys": ["super+."], "command": "next_bookmark" },
+  { "keys": ["super+,"], "command": "prev_bookmark" },
+  { "keys": ["super+m"], "command": "toggle_bookmark" },
+  { "keys": ["super+k", "super+k"], "command": "clear_bookmarks" },
+  { "keys": ["super+b", "super+a"], "command": "select_all_bookmarks" },
+  { "keys": ["super+k", "super+g"], "command": "clear_bookmarks", "args": {"name": "mark"} },
+  { "keys": ["super+k", "super+t"], "command": "toggle_tabs" },
+  { "keys": ["super+k", "super+s"], "command": "toggle_status_bar" },
+
+  /* mark */
+  { "keys": ["super+k", "super+m"], "command": "set_mark" },
+  { "keys": ["super+k", "super+a"], "command": "select_to_mark" },
+  { "keys": ["super+k", "super+w"], "command": "delete_to_mark" },
+  { "keys": ["super+k", "super+p"], "command": "markdown_preview", "args": {"target": "browser"}},
+  { "keys": ["super+k", "super+x"], "command": "swap_with_mark" },
+  { "keys": ["super+shift+o"], "command": "list_tabs"}
+
+
+]

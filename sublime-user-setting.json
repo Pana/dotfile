@@ -1,0 +1,11 @@
+{
+    "font_size": 12.0,
+    "ignored_packages":
+    [
+        "Dayle Rees Color Schemes",
+        "Vintage"
+    ],
+    "line_numbers": false,
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true
+}

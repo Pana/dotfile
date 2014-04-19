@@ -1,0 +1,58 @@
+[user]
+	name = user-name
+	email = user-email
+[core]
+	excludesfile = /Path/.gitignore_global
+    editor = vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[alias]
+    br = branch
+    bra = branch -a
+    brd = branch -d
+    ci = commit
+    ca = commit -a
+    caa = commit --amend
+    co = checkout  # branchName here
+    cb = checkout -b  # new branchName here
+    ct = checkout -t  # remote branchName here
+    dci = svn dcommit # git-svn required
+    df = diff
+    dft = difftool
+    dfa = diffall # git-diffall is required
+    # diffall tool: <https://github.com/thenigan/git-diffall>
+    dfs = diff --stat
+    dfc = diff --cached
+    dfl = diff --name-only
+    dfh = diff HEAD
+    fh = fetch
+    fhv = fetch -v
+    last = log -1 -p HEAD
+    lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset -%Cred%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=local --abbrev-commit
+    ll = log --color --graph --pretty=format:'%n%C(yellow)%s%d%n%C(bold white)<%an> %Cblue%ar %C(red)(%ad)%n%Creset%Cgreen%H'  --stat --topo-order  --decorate --date=local
+    lp = log --color --graph --pretty=format:'%n%C(yellow)%s%d%n%C(bold white)<%an> %Cblue%ar %C(red)(%ad)%n%Creset%Cgreen%H'  --stat --topo-order  --decorate -p --date=local
+    mg = merge   # branchName here
+    ps = push
+    pl = pull
+    plv = pull -v
+    rb = rebase
+    st = status -sb
+    srb = svn rebase # git-svn required
+    tree = log --graph --decorate
+    tg = !tig
+    unstage = reset HEAD --   # fileName here
+    untohead = reset --hard HEAD    # !!caution!! all changes that not commited will be **lost**!!
+    unto = reset --hard      # commitId here !!caution!! all changes *after* the commitId will be lost!!
+[push]
+	default = matching
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
