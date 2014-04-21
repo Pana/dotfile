@@ -2,7 +2,7 @@
 	name = user-name
 	email = user-email
 [core]
-	excludesfile = /Path/.gitignore_global
+	excludesfile = ~/.gitignore_global
     editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
